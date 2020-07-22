@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "kZrJasCOmhW05htb9drEEVNBX601EqNrFg8VNT7+Zbd+mt9Sa9uj0Qxwf5+qCHwxUFW+rgctC+3KptghZ9ew2w==",
-  "success": false,
+  "dgSpecHash": "b12T2V6DYW7/jexgeK0nXlKxPc5hcnyTF46BS/+hYNHcRhoCoUC7TUKBiXsDftsy6pzBXcxpxbpA+KienOBezg==",
+  "success": true,
   "projectFilePath": "C:\\Projetos\\C#\\APIService\\apicampo\\apicampo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\claudio.santos\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
@@ -24,9 +24,9 @@
     "C:\\Users\\claudio.santos\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.4\\microsoft.entityframeworkcore.3.1.4.nupkg.sha512",
     "C:\\Users\\claudio.santos\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.4\\microsoft.entityframeworkcore.abstractions.3.1.4.nupkg.sha512",
     "C:\\Users\\claudio.santos\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.4\\microsoft.entityframeworkcore.analyzers.3.1.4.nupkg.sha512",
-    "C:\\Users\\claudio.santos\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.6\\microsoft.entityframeworkcore.design.3.1.6.nupkg.sha512",
+    "C:\\Users\\claudio.santos\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.4\\microsoft.entityframeworkcore.design.3.1.4.nupkg.sha512",
     "C:\\Users\\claudio.santos\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\3.1.4\\microsoft.entityframeworkcore.inmemory.3.1.4.nupkg.sha512",
-    "C:\\Users\\claudio.santos\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.6\\microsoft.entityframeworkcore.relational.3.1.6.nupkg.sha512",
+    "C:\\Users\\claudio.santos\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.4\\microsoft.entityframeworkcore.relational.3.1.4.nupkg.sha512",
     "C:\\Users\\claudio.santos\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.4\\microsoft.extensions.caching.abstractions.3.1.4.nupkg.sha512",
     "C:\\Users\\claudio.santos\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.4\\microsoft.extensions.caching.memory.3.1.4.nupkg.sha512",
     "C:\\Users\\claudio.santos\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.4\\microsoft.extensions.configuration.3.1.4.nupkg.sha512",
@@ -109,15 +109,5 @@
     "C:\\Users\\claudio.santos\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\claudio.santos\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Downgrade de pacote detectado: Microsoft.EntityFrameworkCore de 3.1.6 para 3.1.4. Referencie o pacote diretamente do projeto para selecionar uma versão diferente. \r\n apicampo -> Microsoft.EntityFrameworkCore.Design 3.1.6 -> Microsoft.EntityFrameworkCore.Relational 3.1.6 -> Microsoft.EntityFrameworkCore (>= 3.1.6) \r\n apicampo -> Microsoft.EntityFrameworkCore (>= 3.1.4)",
-      "libraryId": "Microsoft.EntityFrameworkCore",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }

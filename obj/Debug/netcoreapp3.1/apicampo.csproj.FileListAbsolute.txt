@@ -45,3 +45,6 @@ C:\Projetos\C#\APIService\apicampo\obj\Debug\netcoreapp3.1\staticwebassets\apica
 C:\Projetos\C#\APIService\apicampo\obj\Debug\netcoreapp3.1\apicampo.dll
 C:\Projetos\C#\APIService\apicampo\obj\Debug\netcoreapp3.1\apicampo.pdb
 C:\Projetos\C#\APIService\apicampo\obj\Debug\netcoreapp3.1\apicampo.genruntimeconfig.cache
+C:\Projetos\C#\APIService\apicampo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Projetos\C#\APIService\apicampo\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Projetos\C#\APIService\apicampo\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll

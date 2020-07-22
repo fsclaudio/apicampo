@@ -1,23 +1,23 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using apicampo.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.Configuration;
+
 
 namespace apicampo
 {
     public class Startup
     {
-       
+        public IConfiguration Configuration{get;set;}
+        public Startup(IConfiguration configuration){
+            Configuration=configuration;
+        }
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
@@ -38,9 +38,11 @@ namespace apicampo
                   ValidateAudience = false,
                 };
              });
-            services.AddDbContext<DataContext>(Options => Options.UseInMemoryDatabase("BDTarefas"));
+           // services.AddDbContext<DataContext>(Options => Options.UseInMemoryDatabase("BDTarefas"));
+            services.AddDbContext<DataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("Hirokupost")));
             services.AddTransient<ITarefaRepository, TarefaRepository>();
             services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+            
         }
 
         

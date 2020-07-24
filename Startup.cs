@@ -43,6 +43,7 @@ namespace apicampo
             services.AddDbContext<DataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("Hirokupost")));
             services.AddTransient<ITarefaRepository, TarefaRepository>();
             services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+            services.AddTransient<IVariaveisRepository, VariaveisRepository>();
             
         }
 

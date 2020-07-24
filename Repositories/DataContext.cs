@@ -8,5 +8,6 @@ namespace apicampo.Repositories
         public DataContext(DbContextOptions options): base(options){}
         public DbSet<Tarefa> Tarefas{get; set;}
          public DbSet<Usuario> Usuarios{get; set;}
+          public DbSet<Variaveis> Variaveis{get; set;}
     }
 }

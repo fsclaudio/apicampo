@@ -39,6 +39,7 @@ namespace apicampo
                 };
              });
            // services.AddDbContext<DataContext>(Options => Options.UseInMemoryDatabase("BDTarefas"));
+           // services.AddDbContext<DataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("Hirokupost")));
             services.AddDbContext<DataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("Hirokupost")));
             services.AddTransient<ITarefaRepository, TarefaRepository>();
             services.AddTransient<IUsuarioRepository, UsuarioRepository>();

@@ -1,10 +1,14 @@
 using System;
 using apicampo.Models;
 using apicampo.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace apicampo.Controllers
 {
+     [Authorize]
+     [ApiController]
+     [Route("variaveis")]
     public class VariaveisController : ControllerBase
     {
         [HttpGet]

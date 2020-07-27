@@ -40,7 +40,7 @@ namespace apicampo
              });
            // services.AddDbContext<DataContext>(Options => Options.UseInMemoryDatabase("BDTarefas"));
            // services.AddDbContext<DataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("Hirokupost")));
-            services.AddDbContext<DataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("Hirokupost")));
+            services.AddDbContext<DataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("Postgres")));
             services.AddTransient<ITarefaRepository, TarefaRepository>();
             services.AddTransient<IUsuarioRepository, UsuarioRepository>();
             services.AddTransient<IVariaveisRepository, VariaveisRepository>();

@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace apicampo.Controllers
 {
-     [Authorize]
+    // [Authorize]
      [ApiController]
      [Route("variaveis")]
     public class VariaveisController : ControllerBase
@@ -14,8 +14,8 @@ namespace apicampo.Controllers
         [HttpGet]
         public IActionResult Read([FromServices] IVariaveisRepository repository){
             //var id = new Guid(User.Identity.Name);
-            var variaveis = repository.Read();
-            return Ok(variaveis);
+            var variavel = repository.Read();
+            return Ok(variavel);
         }
         [HttpPost]
         public IActionResult Create([FromBody]Variaveis model , [FromServices]IVariaveisRepository repository)

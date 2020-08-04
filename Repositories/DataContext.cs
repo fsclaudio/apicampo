@@ -9,6 +9,6 @@ namespace apicampo.Repositories
         public DbSet<Tarefa> Tarefas{get; set;}
          public DbSet<Usuario> Usuarios{get; set;}
          public DbSet<Variaveis> Variaveis{get; set;}
-         public DbSet<INDICADORES> Indcadores{get; set;}
+         public DbSet<Indicadores> Indcadores{get; set;}
     }
 }

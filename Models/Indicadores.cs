@@ -2,7 +2,7 @@ using System;
 
 namespace apicampo.Models
 {
-  public class INDICADORES{
+  public class Indicadores{
        public Guid id {get;set;} 
        public string VARIAVEL{get;set;}
        public string DATA{get;set;}

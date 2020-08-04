@@ -8,11 +8,11 @@ namespace apicampo.Repositories
 {
   public interface IIndicadoresRepository
   {
-        List<INDICADORES> Read();
-        INDICADORES Find(String varia);
-        void Create(INDICADORES indicares);
+        List<Indicadores> Read();
+        Indicadores Find(String varia);
+        void Create(Indicadores indicares);
         void Delete(Guid id);
-        void Update(Guid id, INDICADORES indicadores);
+        void Update(Guid id, Indicadores indicadores);
   }  
   public class IndicadoresRepository : IIndicadoresRepository
     {
@@ -21,7 +21,7 @@ namespace apicampo.Repositories
             _context=context;
         }
 
-        public void Create(INDICADORES indicares)
+        public void Create(Indicadores indicares)
         {
             indicares.id =  Guid.NewGuid();
             _context.Indcadores.Add(indicares);
@@ -35,17 +35,17 @@ namespace apicampo.Repositories
            _context.SaveChanges();
         }
 
-        public INDICADORES Find(String varia)
+        public Indicadores Find(String varia)
         {
             return _context.Indcadores.FirstOrDefault(t => t.VARIAVEL == varia);
         }
 
-        public List<INDICADORES> Read()
+        public List<Indicadores> Read()
         {
             return _context.Indcadores.ToList();
         }
 
-        public void Update(Guid id, INDICADORES indicadores)
+        public void Update(Guid id, Indicadores indicadores)
         {
             throw new NotImplementedException();
         }

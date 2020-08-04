@@ -44,6 +44,7 @@ namespace apicampo
             services.AddTransient<ITarefaRepository, TarefaRepository>();
             services.AddTransient<IUsuarioRepository, UsuarioRepository>();
             services.AddTransient<IVariaveisRepository, VariaveisRepository>();
+            services.AddTransient<IIndicadoresRepository, IndicadoresRepository>();
             
         }
 

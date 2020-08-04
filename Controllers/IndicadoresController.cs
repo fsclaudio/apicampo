@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace apicampo.Controllers 
 {
-     //[Authorize]
+     [Authorize]
      [ApiController]
-     [Route("INDICADORES")]
+     [Route("Indica")]
     public class IncadoresController : ControllerBase{
          [HttpGet]   
         public IActionResult Read([FromServices] IIndicadoresRepository repository)
